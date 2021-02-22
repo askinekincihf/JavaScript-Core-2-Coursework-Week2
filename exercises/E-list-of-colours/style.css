@@ -157,3 +157,9 @@ body {
     max-height: 80px;
   }
 }
+
+select, p {
+  width: 50%;
+  height: 2rem;
+};
+
