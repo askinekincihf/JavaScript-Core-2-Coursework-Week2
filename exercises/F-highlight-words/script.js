@@ -4,7 +4,7 @@ function highlightWords(paragraph, colours) {
   const selectElement = document.createElement("select");
   content.append(para, selectElement);
   const paraArr = paragraph.split(" ");
-  
+
   colours.forEach(color => {
     selectElement.innerHTML += `<option>${color}</option>`;
   });
@@ -14,11 +14,10 @@ function highlightWords(paragraph, colours) {
   });
 
   para.addEventListener("click", (e) => {
-    const selectedWord = e.target;
-    if(selectElement.value === "none") {
-      selectedWord.style.backgroundColor = "transparent";
+    if (selectElement.value === "none") {
+      e.target.style.backgroundColor = "transparent";
     } else {
-      selectedWord.style.backgroundColor = selectElement.value;
+      e.target.style.backgroundColor = selectElement.value;
     }
   })
 }

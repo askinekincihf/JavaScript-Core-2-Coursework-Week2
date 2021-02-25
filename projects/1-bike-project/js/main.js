@@ -35,7 +35,6 @@ submitBtn.addEventListener("click", (event) => {
     event.preventDefault();
     submitFlag = true;
     const nameInput = document.querySelector("#example-text-input");
-    console.log(nameInput.value)
     const email = document.querySelector("#exampleInputEmail1");
     let emailValue = email.value;
     const describe = document.querySelector("#exampleTextarea");
